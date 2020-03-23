@@ -16,13 +16,13 @@
         hudHealth: {
             texture: "hud",
             layer: "hudHealth",
-            pivot: [330, 174],
+            pivot: [330, 175],
             position: "screencenter"
         },
         hudEnergy_shadow: {
             texture: "hud_shadow",
             layer: "ui0",
-            pivot: [330, 174],
+            pivot: [331, 174],
             position: "screencenter",
             alpha: .2,
             rotation: Math.PI
