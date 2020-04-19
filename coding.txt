@@ -1,0 +1,39 @@
+// Hey!
+// ---------------------------
+// Console.log(null);
+console.log('Hi There!');
+console.log('WhooHoo! I love doing this, meh');
+console.log(2020/19/04); // Date of when I started coding Js
+console.log('I Am Xvlay'); // Who?
+console.log(null);
+/* console.log('Notes: Practice The Coding of what i learned');
+Console.log('Promised me not to Critizise me!');
+*/ 
+ // Arethmathic
+console.log(3 + 5); // Prints 8
+console.log(5 - 2); // Prints 3
+console.log(4 * 4); // Prints 16
+console.log(9 / 3); // Prints 3
+
+/* console.log < ; Button }} 
+Simple javascript website! */
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
