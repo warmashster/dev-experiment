@@ -1,4 +1,4 @@
-console.log ('Hey!');
+// Hey!
 // ---------------------------
 // Console.log(null);
 console.log('Hi There!');
@@ -38,3 +38,6 @@ Simple javascript website! */
 </body>
 </html>
 */
+// Also known as 'Strings' exp; console.log('string1' + ' ' + 'string2');
+console.log('Hello' +  'World'); // Prints Hello World
+console.log('Hello' + ' ' + 'World'); // Prints Hello World
