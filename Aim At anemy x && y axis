@@ -1,0 +1,38 @@
+void LeftClickDown ( )
+{  
+  INPUT    Input={0};
+  // left down 
+  Input.type      = INPUT_MOUSE;
+  Input.mi.dwFlags  = MOUSEEVENTF_LEFTDOWN;
+  ::SendInput(1,&Input,sizeof(INPUT));
+}
+
+void LeftClickUp( )
+{
+	INPUT    Input={0};
+	  // left up
+  ::ZeroMemory(&Input,sizeof(INPUT));
+  Input.type      = INPUT_MOUSE;
+  Input.mi.dwFlags  = MOUSEEVENTF_LEFTUP;
+  ::SendInput(1,&Input,sizeof(INPUT));
+}
+void Aimbot (bool aim, int x, int y, int enemyx, int enemyy, bool autoshoot)
+{
+	if (aim == true)
+	{	
+		if (x && y == enemyx && enemyy)
+		{
+			if(autoshoot = true)
+			{
+				LeftClickDown ();
+				LeftClickUp ();
+			}
+		}else{
+			POINT CrosshairPos;
+			GetCursorPos(&CrosshairPos);
+			x=CrosshairPos.x;
+			y=CrosshairPos.y;
+			SetCursorPos(enemyx, enemyy);
+		}
+	}
+}
